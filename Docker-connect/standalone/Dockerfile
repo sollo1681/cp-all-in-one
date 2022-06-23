@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM confluentinc/cp-server-connect-base:6.2.0
+FROM confluentinc/cp-server-connect-base:7.1.1
 
 ENV CONNECT_PLUGIN_PATH="/usr/share/java,/usr/share/confluent-hub-components"
 
@@ -21,8 +21,9 @@ USER root
 COPY --chown=appuser:appuser include/etc/confluent/docker /etc/confluent/docker
 USER appuser
 
+ARG CONNECTOR_OWNER=confluentinc
 ARG CONNECTOR_NAME
 ARG CONNECTOR_VERSION
-RUN confluent-hub install --no-prompt confluentinc/${CONNECTOR_NAME}:${CONNECTOR_VERSION}
+RUN confluent-hub install --no-prompt ${CONNECTOR_OWNER}/${CONNECTOR_NAME}:${CONNECTOR_VERSION}
 
 CMD ["/etc/confluent/docker/run"]

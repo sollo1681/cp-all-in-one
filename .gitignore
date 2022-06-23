@@ -8,3 +8,51 @@ img_data
 **/ccloud_library.sh
 *.tar.gz
 log.*
+<<<<<<< Updated upstream
+action.yml
+cp-all-in-one-cloud/docker-compose.connect.distributed.yml
+cp-all-in-one-cloud/docker-compose.yml
+cp-all-in-one-cloud/myprops.properties
+cp-all-in-one-cloud/update_run.sh
+cp-all-in-one-community/docker-compose.yml
+cp-all-in-one-kraft/docker-compose.yml
+cp-all-in-one/docker-compose.yml
+Docker-connect/distributed/Dockerfile
+Docker-connect/standalone/Dockerfile
+Dockerfile
+entrypoint.sh
+=======
+entrypoint.sh
+action.yml
+Dockerfile
+>>>>>>> Stashed changes
+github-actions-example/checkstyle/suppressions.xml
+github-actions-example/configs/librdkafka.ccloud-avro.config
+github-actions-example/configs/librdkafka.ccloud.config
+github-actions-example/configs/librdkafka.local-avro.config
+github-actions-example/configs/librdkafka.local.config
+github-actions-example/configs/librdkafka.sanity.config
+github-actions-example/Dockerfile
+github-actions-example/images/jobs-graphic.png
+github-actions-example/images/jobs-text.png
+github-actions-example/pom.xml
+github-actions-example/README.md
+github-actions-example/requirements.txt
+github-actions-example/schemas/Count-fail.avsc
+github-actions-example/schemas/Count-pass.avsc
+github-actions-example/schemas/Count.avsc
+github-actions-example/src/ccloud_lib.py
+github-actions-example/src/consumer.py
+github-actions-example/src/consumer_ccsr.py
+github-actions-example/src/producer.py
+github-actions-example/src/producer_ccsr.py
+github-actions-example/src/test_schema_compatibility.py
+github-actions-example/tests/ccloud-avro.sh
+github-actions-example/tests/ccloud.sh
+github-actions-example/tests/local-avro.sh
+github-actions-example/tests/local.sh
+github-actions-example/workflows/kafka-app.yml
+<<<<<<< Updated upstream
+=======
+README.md
+>>>>>>> Stashed changes
